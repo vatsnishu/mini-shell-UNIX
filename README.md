@@ -107,18 +107,31 @@ Bye...
 bash prompt:~$
 Important functions and system calls:
 ● int chdir(const char *path)
+
 ● int execvp(const char *file, char *const argv[])
+
 ● void exit(int status)
+
 ● pid_t fork(void)
+
 ● char *getcwd(char *buf, size_t size)
+
 ● char getenv(const char *name)
+
 ● void perror(const char *string)
+
 ● int setenv(const char *name, const char *value, int overwrite)
+
 ● sig_t signal(int sig, sig_t func)
+
 ● pid_t wait(int *status)
+
 ● pid_t waitpid(pid_t wpid, int *status, int options)
+
 ● sighandler_t signal(int signum, sighandler_t handler);
+
 ● int dup2(int oldfd, int newfd);
+
 
 NOTE:
 1. system() has not been used, to explore basic system calls.
